@@ -1,0 +1,60 @@
+<!--Body-->
+
+<div class="card-body text-primary" style="margin-top: 80px;">
+    
+    </div>
+    
+    <h1>Medicine Details</h1>
+<div class="container">
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <i class="fa fa-id-card"></i><b>Id :</b> {{medicine.id}}
+            </li>
+        
+            <li class="list-group-item">
+                <i class="fa fa-user"></i><b>Name : </b>{{medicine.name}}
+            </li>
+        
+            <li class="list-group-item">
+                <i class="fa fa-envelope"></i><b>Description :</b> {{medicine.description}}
+            </li>
+        
+            <li class="list-group-item">
+                 <i class="fa fa-lock"  ></i> <b >Category :  </b>
+                {{medicine.category}}
+                </li>
+        
+            <li class="list-group-item">
+                <i class="fa fa-rupee-sign"></i><b>Price :</b> {{medicine.price}}
+            </li>
+        
+            <li class="list-group-item">
+                <i class="fa fa-image"></i><b>Image :</b> <img src="../assets/{{medicine.name| lowercase}}.png"  width="100%" height="100%" >
+            </li>
+        
+            
+        
+        </ul>
+    </div>
+
+
+<div class="row" >
+       
+    <a href="/ticket/{{medicine.id}}"><button type="button" class="btn btn-success" style="height: fit-content; width: fit-content; font-size: 40px;"(click)="btnClick();" ><i class="fa fa-ticket"></i>PAY NOW</button></a>
+    
+</div>
+<div class="row">
+    <label style="font-size: 15px;"> This Amount will Be Deducted from Your Bank Account</label><br>
+</div>
+
+
+</div>
+    
+    <div class="card-footer bg-transperent border-info">
+     @Copyright 2023 Prepared By: Dhruba Chandra Jamatia
+    </div>
+    
+    
+    
+     
